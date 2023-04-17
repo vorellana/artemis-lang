@@ -9,6 +9,9 @@ node_modules
 # testing
 /coverage
 
+# node
+/backend/build
+
 # next.js
 /frontend/.next/
 /frontend/out/
