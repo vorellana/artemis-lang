@@ -1,0 +1,8 @@
+# Ignorar archivos y directorios específicos
+node_modules
+*.log
+.DS_Store
+
+# Ignorar archivos y directorios dentro de un directorio específico
+/dist
+/public/uploads
