@@ -48,7 +48,7 @@ function Commands() {
 
   const sendData = async () => {
 
-    console.log('variables 546');
+    console.log('variables 624');
     console.log('NEXT_PUBLIC_API_URL -> ', process.env.NEXT_PUBLIC_API_URL);
     console.log('NEXT_PUBLIC_HOSTNAME -> ', process.env.NEXT_PUBLIC_HOSTNAME);
     console.log('NEXT_PUBLIC_API_KEY -> ', process.env.NEXT_PUBLIC_API_KEY);

@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/artemis-frontend-task-1",
+          "awslogs-group": "/ecs/artemis-frontend-task-1-1",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -27,16 +27,16 @@
       "cpu": 0,
       "environment": [
         {
-          "name": "NEXT_API_KEY",
+          "name": "NEXT_PUBLIC_API_KEY",
           "value": "bmhgujpKT2PSq4lyQcT6M5VxvML1cusbER0fllLaEnMPT8HHHzcOPiKz6knrvQD5ak2EgKpxur6HIQsnryyyDePauenGn21NmChShBYVgc5Hkp8S7GVOYvUt7gadjqQc"
         },
         {
           "name": "NEXT_PUBLIC_API_URL",
-          "value": "http://artemis-backend-balance-1-1425567086.us-east-1.elb.amazonaws.com"
+          "value": "http://artemis-backend-balance-1-1425567086.us-east-1.elb.amazonaws.com/ship/evaluate"
         },
         {
           "name": "NEXT_PUBLIC_HOSTNAME",
-          "value": "localhost"
+          "value": "localhost:72"
         }
       ],
       "resourceRequirements": null,
@@ -50,7 +50,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/artemis-frontend-1",
+      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/artemis-frontend-1-1",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -67,7 +67,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "artemis-frontend-container-1-1"
+      "name": "artemis-frontend-container-1-1-1"
     }
   ],
   "placementConstraints": [],
@@ -77,8 +77,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/artemis-frontend-task-1:1",
-  "family": "artemis-frontend-task-1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/artemis-frontend-task-1-1:1",
+  "family": "artemis-frontend-task-1-1",
   "requiresAttributes": [
     {
       "targetId": null,
