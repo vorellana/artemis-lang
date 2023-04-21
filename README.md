@@ -13,6 +13,9 @@ Artemis Lang es un lenguaje de programación interpretado creado como parte del 
   - [Backend](#backend)
   - [CI/CD](#cicd)
 - [Cómo levantar el proyecto](#cómo-levantar-el-proyecto)
+- [Cómo Ejecutar las pruebas en Backend](#Cómo-Ejecutar-las-pruebas-en-Backend)
+- [Cómo Ejecutar las pruebas en Frontend](#Cómo-Ejecutar-las-pruebas-en-Frontend)
+- [Capturas de pantalla](#Capturas-de-pantalla)
 
 ## Introducción
 
@@ -24,9 +27,9 @@ AIL consta de un backend y un frontend que permiten a los usuarios enviar y reci
 
 ## Frontend en vivo
 
-Puedes acceder al frontend en vivo en el siguiente enlace: [AIL Frontend](http://artemis-frontend-balance-b-1639758126.us-east-1.elb.amazonaws.com/)
+Puedes acceder al frontend en vivo en el siguiente enlace: [Artemisa Lang Frontend](http://artemis-frontend-balance-b-1639758126.us-east-1.elb.amazonaws.com/)
 
-(AQUI LOS DIBUJOS)
+![alt text](https://github.com/vorellana/artemis-lang/blob/main/resources/images/main.png?raw=true)
 
 ## Características
 
@@ -34,18 +37,14 @@ Puedes acceder al frontend en vivo en el siguiente enlace: [AIL Frontend](http:/
 - Backend y frontend escritos en TypeScript
 - Manejo y estructura del proyecto en Monorepo (repositorio único)
 - Análisis de código estático para mantener la calidad y estilo del código.
-
 - Soporte para expresiones booleanas y constantes
 - Comunicación a través de peticiones HTTP usando formato JSON
 - API protegida a través de una ApiKey
 - Tests unitarios y funcionales (Todos los test pasan al 100%)
-
 - Frontend con diseño responsivo para adaptarse a dispositivos móviles.
 - Tests en React (hacia cada componente creado)
-
 - Despliegue continuo en GitHub Actions
 - Infraesctructura 100% en Amazon Web Services
-
 
 ## Tecnologías utilizadas
 
