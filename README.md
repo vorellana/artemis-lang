@@ -27,7 +27,7 @@ AIL consta de un backend y un frontend que permiten a los usuarios enviar y reci
 
 ## Frontend en vivo
 
-Puedes acceder al frontend en vivo en el siguiente enlace: [Artemisa Lang Frontend](http://artemis-frontend-balance-b-1639758126.us-east-1.elb.amazonaws.com/)
+Puedes acceder al frontend en vivo en el siguiente enlace: [Artemisa Lang Frontend](http://artemis-frontend-balance-b-1639758126.us-east-1.elb.amazonaws.com/){:target="_blank"}
 
 ![alt text](https://github.com/vorellana/artemis-lang/blob/main/resources/images/main.png?raw=true)
 
@@ -149,7 +149,7 @@ Puedes acceder al frontend en vivo en el siguiente enlace: [Artemisa Lang Fronte
         npm run test:unit
         ```
 
-    3. Ejecuta las pruebas funcionales
+    3. Ejecuta las pruebas funcionales (la aplicación backend tiene que estar en ejecución)
 
         ```
         npm run test:functional
@@ -170,15 +170,21 @@ Puedes acceder al frontend en vivo en el siguiente enlace: [Artemisa Lang Fronte
         npm run test
         ```
 
-## Captura de pantalla 
+## Capturas de pantalla 
 
-- De todas las pruebas, todas pasadas al 100%
+Backend: Pruebas unitarias aprobadas al 100%
+![alt text](https://github.com/vorellana/artemis-lang/blob/main/resources/images/unit_test.png)
 
+Backend: Pruebas funcionales aprobadas al 100%
+![alt text](https://github.com/vorellana/artemis-lang/blob/main/resources/images/functional_test.png)
 
+Frontend: Pruebas unitarias aprobadas al 100%
+![alt text](https://github.com/vorellana/artemis-lang/blob/main/resources/images/front_test.png)
+
+CI/CD: Despliegue exitoso con Github Actions hacia los recursos en AWS
+![alt text](https://github.com/vorellana/artemis-lang/blob/main/resources/images/deploy.png)
 
 
 ### Gracias!!!
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 
