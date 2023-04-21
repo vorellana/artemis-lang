@@ -9,6 +9,7 @@ const shipEvaluateApi = async (data: any): Promise<ShipEvaluateResponse> => {
     const res = await axios.post<ShipEvaluateResponse>(`${process.env.NEXT_PUBLIC_API_URL}/ship/evaluate`, data, {
       headers: {
         'Content-Type': 'application/json',
+        'x-api-key': process.env.NEXT_PUBLIC_API_KEY,
       }
     });
     return res.data;
