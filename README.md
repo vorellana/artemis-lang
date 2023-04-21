@@ -27,7 +27,7 @@ AIL consta de un backend y un frontend que permiten a los usuarios enviar y reci
 
 ## Frontend en vivo
 
-Puedes acceder al frontend en vivo en el siguiente enlace: [Artemisa Lang Frontend](http://artemis-frontend-balance-b-1639758126.us-east-1.elb.amazonaws.com/){:target="_blank"}
+Puedes acceder al frontend en vivo en el siguiente enlace: <a href="http://artemis-frontend-balance-b-1639758126.us-east-1.elb.amazonaws.com/" target="_blank">Artemisa Lang Frontend</a>
 
 ![alt text](https://github.com/vorellana/artemis-lang/blob/main/resources/images/main.png?raw=true)
 
