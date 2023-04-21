@@ -6,7 +6,7 @@ import { shipRouter } from "./routes/shipRoutes";
 const app: Application = express();
 
 const corsOptions = {
-  origin: 'http://artemis-frontend-balance-b-1639758126.us-east-1.elb.amazonaws.com',
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
   allowedHeaders: ['Content-Type', 'Authorization', 'x-api-key'],
 };

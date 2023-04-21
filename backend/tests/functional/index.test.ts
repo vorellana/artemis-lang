@@ -5,7 +5,11 @@ import axios from "axios";
 dotenv.config();
 
 function getHost() {
-  return process.env.SHIP_URL;
+  return process.env.SHIP_URL || 'http://localhost:81';
+}
+
+function getApiKey() {
+  return process.env.API_KEY || '';
 }
 
 function getFullPath() {
@@ -19,6 +23,7 @@ describe("functional tests for evaluate", () => {
     const response = await axios.post(path, JSON.stringify(input), {
       headers: {
         "Content-Type": "application/json",
+        'x-api-key': getApiKey(),
       },
     });
 
