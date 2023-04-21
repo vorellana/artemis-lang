@@ -12,16 +12,16 @@ env:
   AWS_REGION: us-east-1
 
   ECR_REPOSITORY_BACKEND: artemis-backend-1
-  ECR_REPOSITORY_FRONTEND: artemis-frontend-1-1
+  ECR_REPOSITORY_FRONTEND: artemis-frontend-b
 
   CONTAINER_NAME_BACKEND: artemis-backend-container-1-1
-  CONTAINER_NAME_FRONTEND: artemis-frontend-container-1-1-1
+  CONTAINER_NAME_FRONTEND: artemis-frontend-container-1-b
 
   ECS_CLUSTER_BACKEND: artemis-backend-cluster-1
-  ECS_CLUSTER_FRONTEND: artemis-frontend-cluster-1-1
+  ECS_CLUSTER_FRONTEND: artemis-frontend-cluster-b
 
   ECS_SERVICE_BACKEND: artemis-backend-service-1
-  ECS_SERVICE_FRONTEND: artemis-frontend-service-1-1
+  ECS_SERVICE_FRONTEND: artemis-frontend-service-b
 
   ECS_TASK_DEFINITION_BACKEND: backend/task-definition.json
   ECS_TASK_DEFINITION_FRONTEND: frontend/task-definition.json

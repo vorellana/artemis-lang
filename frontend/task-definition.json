@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/artemis-frontend-task-1-1",
+          "awslogs-group": "/ecs/artemis-frontend-task-b",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -50,7 +50,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/artemis-frontend-1-1",
+      "image": "556628320449.dkr.ecr.us-east-1.amazonaws.com/artemis-frontend-b",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -67,7 +67,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "artemis-frontend-container-1-1-1"
+      "name": "artemis-frontend-container-1-b"
     }
   ],
   "placementConstraints": [],
@@ -77,8 +77,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/artemis-frontend-task-1-1:1",
-  "family": "artemis-frontend-task-1-1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:556628320449:task-definition/artemis-frontend-task-b:1",
+  "family": "artemis-frontend-task-b",
   "requiresAttributes": [
     {
       "targetId": null,
