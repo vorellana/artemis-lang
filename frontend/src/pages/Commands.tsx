@@ -48,23 +48,23 @@ function Commands() {
 
   const sendData = async () => {
 
-    console.log('variables 930');
-    console.log('NEXT_PUBLIC_API_URL -> ', process.env.NEXT_PUBLIC_API_URL);
-    console.log('NEXT_PUBLIC_HOSTNAME -> ', process.env.NEXT_PUBLIC_HOSTNAME);
-    console.log('NEXT_PUBLIC_API_KEY -> ', process.env.NEXT_PUBLIC_API_KEY);
+    console.log('sendData 234 -> ', expressiondata);
 
     if (expressiondata === '') {
-      setToastMessage('Expresión vacía!');    
+      setToastMessage('Expresión vacía!');
       return;
     }
     setIsLoading(true);
-    console.log('sendData 538 -> ', expressiondata);
-    const res = await shipEvaluateApi(expressiondata);
-    console.log('sendData 852 -> ', res);
-    setResultText(JSON.stringify(res));
+    try {
+      const res = await shipEvaluateApi(expressiondata);  
+      setResultText(JSON.stringify(res));
+    } catch (error) {
+      setToastMessage('Sucedió un error en el envío.');
+      setResultText('');
+    }
     setTimeout(() => {
       setIsLoading(false);  
-    }, 2000);
+    }, 1500);
   };
 
   return (

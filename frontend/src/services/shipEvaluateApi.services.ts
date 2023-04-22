@@ -1,18 +1,16 @@
 import axios from 'axios';
+import { apiUrl, apiKey } from '../utils/environmentVariables';
 
 interface ShipEvaluateResponse {
   data: any; 
 }
 
-//TODO: crear un metodo para obtener todas las variables de entorno
-const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:81';
-
 const shipEvaluateApi = async (data: any): Promise<ShipEvaluateResponse> => {
   try {
-    const res = await axios.post<ShipEvaluateResponse>(`${apiUrl}/ship/evaluate`, data, {
+    const res = await axios.post<ShipEvaluateResponse>(`${apiUrl()}/ship/evaluate`, data, {
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': process.env.NEXT_PUBLIC_API_KEY,
+        'x-api-key': apiKey(),
       }
     });
     return res.data;
